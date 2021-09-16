@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body id="home">
+    <header>
+        <img src="/MBLogo.png">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="experience.html">Gallery</a></li>
+                <li><a href="education.html">Contact</a></li>
+                <li><a href="portfolio.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            
+            <div id="introSpacer"></div>
+            <div id="introBox"></div>
+            <div id="introText">
+                <h1>Welcome to my site!</h1>
+                <p>I am I am an artist based in Dallas, 
+                    Texas specializing in charcoal portraits.
+                    With over 100 portraits to date, I have the 
+                    experience and skill to turn your photograph 
+                    into a priceless work of art.
+                </p>
+                <div><button id="quote">Get a Quote</button></div>
+            </div>
+            <img src="/profile.png">
+
+           
+        </section>
+     
+        <section id="calculator">
+            <div id="closeDiv"><button id="close">X</button></div>
+            <div class="calculator">
+                <h2>Charcoal Portrait<br> Price  Calculator</h2>
+              <div>
+                <label for="calc-people" id="calc-people_value" class="label">People: 1</label>
+              <input id="calc-people" class="slider" type="range" value="1" min="1" max="5">
+    
+              <label for="calc-size" id="calc-size_value" class="label">Size: 8x10</label>
+              <input id="calc-size" class="slider" type="range" value="1" min="1" max="5">
+              </div>
+           
+            <div class="results">
+              <div id="calc-price" class="label">
+                Price:
+                <span>$200</span>
+              </div>
+            </div>
+            <div><button id="order">Order by Email</button></div>
+        </div>
+        
+        </section>
+    </main>
+    <footer>
+        <img src="/instagram.png">
+        <img src="/fb.png">
+        <img src="/youtube.png">
+        <div id="copyright">
+			<p>&copy; Copyright 2020. All Rights Reserved. <br>
+			<a href="mailto:mbuxkemper@gmail.com">mbuxkemper@gmail.com</a></p>
+		</div>
+
+    </footer>
+    <script src="/script/calc.js"></script>
+</body>
+</html>
