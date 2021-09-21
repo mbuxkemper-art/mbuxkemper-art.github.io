@@ -571,16 +571,14 @@ margin-bottom: 15%;
     position: absolute;
     align-self: flex-end;
     justify-self: left;
-    /* right: 480px;
-    top: 600px; */
+    
     font-size: 25px;
     opacity: .6;
     cursor: pointer;
     grid-column: 1/2;
-    bottom: 4%;
-    left: 18%
-    /* margin-bottom: 3%;
-    margin-left: 21%; */
+    bottom: 17px;
+    left: 17.5%
+    margin-left: 17px;
 }
 
 
