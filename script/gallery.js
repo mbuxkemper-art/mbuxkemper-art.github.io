@@ -2,11 +2,11 @@ $(document).ready(function() {
 
 const carouselSlide = document.querySelector('.carousel-slide');
 const carouselImages = document.querySelectorAll('.carousel-slide img');
-
+const imageCount = carouselImages.length;
 const prevBtn = document.querySelector('#prevBtn');
 const nextBtn = document.querySelector('#nextBtn');
 let rightId = 'image2';
-let leftId = 'image5';
+let leftId = 'image6';
 ////Dynamic Offset for left/right images
 
 
@@ -23,9 +23,9 @@ function setOffsets() {
 setOffsets();   
 // let offset = ($(window).width())/8.5;
 // let offsetCss = 'translateX(' + (offset) + 'px)';
-document.getElementById('image2').style.transform = offsetCss;
+document.getElementById(rightId).style.transform = offsetCss;
 // let negOffsetCss = 'translateX(' + (-offset) + 'px)';
-document.getElementById('image5').style.transform = negOffsetCss;
+document.getElementById(leftId).style.transform = negOffsetCss;
 
 window.addEventListener('resize', setOffsets);
 
@@ -53,14 +53,14 @@ nextBtn.addEventListener('click',() => {
     
     if(counter <= 1){
         console.log('yes');
-        leftId = prefix.concat(5);
+        leftId = prefix.concat(imageCount);
     } else{
         leftId = prefix.concat(counter-1);
     }
     let frontId = prefix.concat(counter);
     let frontInfo =prefixInfo.concat(counter);
     let rightId = 0;
-    if(counter >= 5){
+    if(counter >= imageCount){
         console.log('yes2');
         rightId = prefix.concat(1);
     } else{
@@ -68,11 +68,11 @@ nextBtn.addEventListener('click',() => {
     }
     // let leftId = prefix.concat(counter-1);
     let backId = 0;
-    if(counter <= 3){
+    if(counter <= (imageCount-2)){
   
         backId = prefix.concat(counter+2);
     } else{
-        backId = prefix.concat(counter-3);
+        backId = prefix.concat(counter-(imageCount-2));
     }
     console.log(leftId + frontId +  rightId + backId);
    
@@ -107,7 +107,7 @@ nextBtn.addEventListener('click',() => {
 
     console.log('next');
     
-    if(counter<=4){
+    if(counter<=(imageCount-1)){
     counter++;} else{
         counter = 1;
     }
@@ -125,14 +125,14 @@ prevBtn.addEventListener('click',() => {
    
     if(counter <= 1){
         console.log('yes');
-        leftId = prefix.concat(5);
+        leftId = prefix.concat(imageCount);
     } else{
         leftId = prefix.concat(counter-1);
     }
     let frontId = prefix.concat(counter);
     let frontInfo =prefixInfo.concat(counter);
     let rightId = 0;
-    if(counter >= 5){
+    if(counter >= imageCount){
         console.log('yes2');
         rightId = prefix.concat(1);
     } else{
@@ -144,7 +144,7 @@ prevBtn.addEventListener('click',() => {
   
         backId = prefix.concat(counter-2);
     } else{
-        backId = prefix.concat(counter+3);
+        backId = prefix.concat(counter+(imageCount-2));
     }
     console.log(leftId + frontId +  rightId + backId);
    
@@ -181,7 +181,7 @@ prevBtn.addEventListener('click',() => {
     
     if(counter>=2){
     counter--;} else{
-        counter = 5;
+        counter = imageCount;
     }
     swtch=0;
 });
@@ -262,6 +262,22 @@ infoBtn5.addEventListener('click',() => {
     
     else{
     $('#info5').fadeIn('fast');
+    console.log("ibtn1on");
+    swtch = 1;
+    }
+    
+});
+
+infoBtn6.addEventListener('click',() => {
+    console.log('fired')
+    if (swtch == 1){
+        $('#info6').fadeOut('fast');
+        console.log("ibtn1off");
+        swtch = 0;
+        }
+    
+    else{
+    $('#info6').fadeIn('fast');
     console.log("ibtn1on");
     swtch = 1;
     }
