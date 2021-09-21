@@ -5,8 +5,35 @@ const carouselImages = document.querySelectorAll('.carousel-slide img');
 
 const prevBtn = document.querySelector('#prevBtn');
 const nextBtn = document.querySelector('#nextBtn');
+let rightId = 'image2';
+let leftId = 'image5';
+////Dynamic Offset for left/right images
 
-// const infoBtn1 = document.querySelector('#infoBtn1');
+
+function setOffsets() {
+    offset = ($(window).width())/8.5;
+    offsetCss = 'translateX(' + (offset) + 'px)';
+    negOffsetCss = 'translateX(' + (-offset) + 'px)';
+    console.log('resize');
+    // document.getElementById(rightId).style.transform =  offsetCss;
+    // document.getElementById(leftId).style.transform =  negOffsetCss;
+
+
+}
+setOffsets();   
+// let offset = ($(window).width())/8.5;
+// let offsetCss = 'translateX(' + (offset) + 'px)';
+document.getElementById('image2').style.transform = offsetCss;
+// let negOffsetCss = 'translateX(' + (-offset) + 'px)';
+document.getElementById('image5').style.transform = negOffsetCss;
+
+window.addEventListener('resize', setOffsets);
+
+console.log('offset' + offset);
+
+
+
+
 
 let counter = 1;
 console.log(counter);
@@ -51,7 +78,7 @@ nextBtn.addEventListener('click',() => {
    
    //Front Image
     document.getElementById(frontId).style.transition = "transform 0.4s ease-in-out";
-    document.getElementById(frontId).style.transform =  'translateX(' + (-300) + 'px)';
+    document.getElementById(frontId).style.transform =  negOffsetCss;
     document.getElementById(frontId).style.opacity =  "0.75";
     document.getElementById(frontId).style.zIndex =  "5";
     $(frontInfo).fadeOut('fast');
@@ -75,7 +102,7 @@ nextBtn.addEventListener('click',() => {
 
     //Back Image
     document.getElementById(backId).style.transition = "transform 0.4s ease-in-out";
-    document.getElementById(backId).style.transform =  'translateX(' + (300) + 'px)';
+    document.getElementById(backId).style.transform =  offsetCss;
 
 
     console.log('next');
@@ -123,7 +150,7 @@ prevBtn.addEventListener('click',() => {
    
    //Front Image
     document.getElementById(frontId).style.transition = "transform 0.4s ease-in-out";
-    document.getElementById(frontId).style.transform =  'translateX(' + (300) + 'px)';
+    document.getElementById(frontId).style.transform =  offsetCss;
     document.getElementById(frontId).style.opacity =  "0.75";
     document.getElementById(frontId).style.zIndex =  "5";
     $(frontInfo).fadeOut('fast');
@@ -147,7 +174,7 @@ prevBtn.addEventListener('click',() => {
 
     //Back Image
     document.getElementById(backId).style.transition = "transform 0.4s ease-in-out";
-    document.getElementById(backId).style.transform =  'translateX(' + (-300) + 'px)';
+    document.getElementById(backId).style.transform =  negOffsetCss;
 
 
     console.log('next');

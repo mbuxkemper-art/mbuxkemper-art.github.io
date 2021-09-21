@@ -8,8 +8,9 @@ document.getElementById("quote").addEventListener("click", displayCalc);
 // }
 function displayCalc() {
   //document.getElementById("calculator").style.display = "block";
-  $("#calculator").show("slow");
+  $("#calculator").fadeIn("slow");
   window.scrollBy(0, 300);
+  $('#quote').fadeOut("fast");
   //deleteMargin();
   
 }
@@ -19,10 +20,12 @@ function displayCalc() {
 document.getElementById("close").addEventListener("click", hideCalc);
 
 function hideCalc() {
-  $("#calculator").hide("slow");
+  $("#calculator").fadeOut("slow");
+  $('#quote').fadeIn("fast");
   //document.getElementById("calculator").style.display = "none";
   // document.getElementById("intro").style.marginBottom = "300px";  
   window.scrollBy(0, -300);
+ 
 }
 
 
