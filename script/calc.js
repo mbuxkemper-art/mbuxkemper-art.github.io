@@ -160,7 +160,7 @@ $(".calculator input").on("input change", function (event) {
 
 }
 
-$("#calc-price").html("<span>Price: " + price + "</span>");
+$("#calc-price").html("<span>" + price + "</span>");
 
 });
 
