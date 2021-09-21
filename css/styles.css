@@ -578,7 +578,7 @@ margin-bottom: 15%;
     grid-column: 1/2;
     bottom: 17px;
     left: 17.5%;
-    margin-left: 17px;
+    margin-left: 2px;
 }
 
 
@@ -919,7 +919,7 @@ footer img {
 #infoBtn1, #infoBtn2, #infoBtn3,#infoBtn4,#infoBtn5, #infoBtn6{
     bottom: 10px;
     left: 17.5%;
-    margin-left: 10px;
+    margin-left: 3px;
 }
   #introLink{
     font-size: 4.7vw;
