@@ -8,38 +8,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
 <body id="home">
     <header>
-        <img src="/MBLogo.png">
+        <img  src="/MBLogo.png">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="experience.html">Gallery</a></li>
-                <li><a href="education.html">Contact</a></li>
-                <li><a href="portfolio.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="homeMain">
         <section id="intro">
             
-            <div id="introSpacer"></div>
             <div id="introBox"></div>
             <div id="introText">
                 <h1>Welcome to my site!</h1>
-                <p>I am I am an artist based in Dallas, 
-                    Texas specializing in charcoal portraits.
+                <p>I am an artist based in Dallas, 
+                    Texas specializing in <a href="/gallery.html"><span id="introLink">charcoal portraits.</span></a>
                     With over 100 portraits to date, I have the 
                     experience and skill to turn your photograph 
                     into a priceless work of art.
                 </p>
                 <div><button id="quote">Get a Quote</button></div>
             </div>
-            <img src="/profile.png">
+            <div class="desktop"><img src="/profile.png"></div>
+            <div class="mobile"><img src="/profile2.png" alt=""></div>
 
            
         </section>
@@ -68,9 +68,9 @@
         </section>
     </main>
     <footer>
-        <img src="/instagram.png">
-        <img src="/fb.png">
-        <img src="/youtube.png">
+        <a href="https://www.instagram.com/mbuxkemper/"><img src="/instagram.png"></a>
+        <a href="https://www.facebook.com/portraitsbymarkbuxkemper/"><img src="/fb.png"></a>
+        <a href="https://www.youtube.com/user/mbuxkemper"><img src="/youtube.png"></a>
         <div id="copyright">
 			<p>&copy; Copyright 2020. All Rights Reserved. <br>
 			<a href="mailto:mbuxkemper@gmail.com">mbuxkemper@gmail.com</a></p>

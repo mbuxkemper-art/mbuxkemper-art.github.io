@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/2acda5ece9.js" crossorigin="anonymous"></script>    
+
+<title>Document</title>
+</head>
+<body id="home">
+    <header>
+        <img src="/MBLogo.png">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact">
+            <div id="contactContent">
+                <h1>Contact Form</h1>
+                <textarea rows="1" wrap="hard" id="name" name="name" class="contactField" placeholder="Name"></textarea>
+
+                
+                <textarea rows="1" wrap="hard" id="subject" name="subject" class="contactField" placeholder="Subject"></textarea>
+
+                
+                <textarea rows="4" wrap="hard" id="message" name="message" class="contactField" placeholder="Message"></textarea>
+            
+                <!-- <input id="submit" type="submit" value="Submit"> -->
+                <button id="submit" onclick="sendMail(); return false">Send</button>
+
+                
+            </div>
+            <div id="contactInfo">
+            
+                <p id="email"><i class="far fa-envelope"></i> <a href="mailto:mbuxkemper@gmail.com"> mbuxkemper@gmail.com</a></p>
+                <p id="fb"><i class="fab fa-facebook-square"></i>  <a href="https://www.facebook.com/portraitsbymarkbuxkemper/">Portraits by Mark Buxkemper</a></p>
+                
+                <p id="insta"> <i class="fab fa-instagram"></i> <a href="https://www.instagram.com/mbuxkemper/"> @mbuxkemper</a></p>
+               <p id="youtube"><i class="fab fa-youtube"></i>  <a href="https://www.youtube.com/user/mbuxkemper">mbuxkemper</a></p>
+
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <a href="https://www.instagram.com/mbuxkemper/"><img src="/instagram.png"></a>
+        <a href="https://www.facebook.com/portraitsbymarkbuxkemper/"><img src="/fb.png"></a>
+        <a href="https://www.youtube.com/user/mbuxkemper"><img src="/youtube.png"></a>
+        <div id="copyright">
+			<p>&copy; Copyright 2020. All Rights Reserved. <br>
+			<a href="mailto:mbuxkemper@gmail.com">mbuxkemper@gmail.com</a></p>
+		</div>
+
+    </footer>
+<script src="/script/contact.js"></script>
+</body>
+</html>
