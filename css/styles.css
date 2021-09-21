@@ -178,7 +178,7 @@ footer {
     opacity: .9;
     padding: 1em;
     justify-content: center;
-    background: linear-gradient(to left, rgba(255,255,255,0),  rgba(56,56,54,1), rgba(255,255,255,0));
+    background: linear-gradient(to left, rgba(255,255,255,0),  rgba(56,56,54,1), rgba(56,56,54,1), rgba(255,255,255,0));
     flex-wrap: wrap;
 }
 
