@@ -526,11 +526,18 @@ margin-bottom: 15%;
   display: grid;
   grid-column: 1 / 4;
   grid-row: 1 / 2;
+    opacity: .5;
+    transform: scale(.2);
+}
+#image6{
+  display: grid;
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
     transform: translate(-225px);
     opacity: .75;
 }
 
-#info1, #info2, #info3, #info4, #info5 {
+#info1, #info2, #info3, #info4, #info5, #info6 {
     display: none;
     position: absolute;
     left: 20%;
@@ -558,7 +565,7 @@ margin-bottom: 15%;
     line-height: 1em;
 }
 
-#infoBtn1, #infoBtn2, #infoBtn3,#infoBtn4,#infoBtn5{
+#infoBtn1, #infoBtn2, #infoBtn3,#infoBtn4,#infoBtn5, #infoBtn6{
     z-index: 50;
     grid-row: 1/2;
     position: absolute;
