@@ -255,7 +255,7 @@ font-weight: bold;
 
 :root {
     --primary-color: #435fda;
-    --secondary-color: #8d0c25;
+    --secondary-color: black;
     --body-font-size: 16px;
     --line-height: 1.5;
     --content-width: 480px;
