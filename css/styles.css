@@ -615,7 +615,9 @@ margin-bottom: 15%;
   margin: 10px;
   font-weight: bold;
 }
-
+textarea{
+  color: black;
+}
 #name, #subject{
   max-height: 50px;
 }
@@ -1035,7 +1037,7 @@ footer{
   padding: 0px;
 }
 #contactInfo p {
-  font-size: 1em;
+  font-size: .9em;
   margin: 2px;
 }
 #contactInfo{
