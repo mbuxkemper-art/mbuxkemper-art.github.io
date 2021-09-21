@@ -451,7 +451,7 @@ margin-bottom: 15%;
 .carousel-slide img{
     /* width: 150%; */
   border: white solid 15px;
-  width: 60%;
+  width: 65%;
   justify-self: center;
   grid-row: 1/2;
   grid-column: 1/2;
