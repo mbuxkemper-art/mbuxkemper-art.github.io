@@ -84,13 +84,13 @@ $(".calculator input").on("input change", function (event) {
           var price = "$340";
         break;
       case "3a":
-          var price = "2 People Max";
+          var price = "Not Available";
          break;  
       case "4a":
-          var price = "2 People Max";
+          var price = "Not Available";
         break;
       case "5a":
-          var price = "2 People Max";
+          var price = "Not Available";
         break;
       case "1b":
           var price = "$250";
@@ -102,10 +102,10 @@ $(".calculator input").on("input change", function (event) {
           var price = "$570";
          break;  
       case "4b":
-          var price = "3 People Max";
+          var price = "Not Available";
         break;
       case "5b":
-          var price = "3 People Max";
+          var price = "Not Available";
         break;
         case "1c":
           var price = "$325";
@@ -120,7 +120,7 @@ $(".calculator input").on("input change", function (event) {
           var price = "$865";
         break;
       case "5c":
-          var price = "4 People Max";
+          var price = "Not Available";
         break;
         case "1d":
           var price = "$375";
@@ -135,7 +135,7 @@ $(".calculator input").on("input change", function (event) {
           var price = "$975";
         break;
       case "5d":
-          var price = "4 People Max";
+          var price = "Not Available";
         break;
         case "1e":
           var price = "$400";
@@ -160,7 +160,7 @@ $(".calculator input").on("input change", function (event) {
 
 }
 
-$("#calc-price").html("<span>" + price + "</span>");
+$("#calc-price").html("<span>Price: " + price + "</span>");
 
 });
 
