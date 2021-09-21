@@ -915,6 +915,12 @@ footer img {
   .carousel-slide img {
     border: white solid 7px;
   }
+	
+#infoBtn1, #infoBtn2, #infoBtn3,#infoBtn4,#infoBtn5, #infoBtn6{
+    bottom: 10px;
+    left: 17.5%
+    margin-left: 10px;
+}
   #introLink{
     font-size: 4.7vw;
   }
